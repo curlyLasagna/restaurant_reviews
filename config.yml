@@ -1,0 +1,89 @@
+baseURL: ""
+title: 'Restaurant Reviews'
+theme: 'PaperMod'
+
+buildDrafts: true
+buildFuture: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  mainSections:
+  - reviews
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: RestaurantReviews
+  description: "A website on restaurants visited"
+  # keywords: [Blog, Portfolio, PaperMod]
+  # author: Me
+  author: ["Luis", "Zeshan"] # multiple authors
+  # images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  label:
+    text: "Home"
+    icon: /icons8-food-64.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: "Restuarant Reviews"
+    subtitle: >
+      Luis & Zeshan's restuarant reviews!
+
+
+      We bond through food
+
+
+      Food is our love language!
+
+    imageUrl: /IMG_1762.jpeg
+    imageWidth: 260
+    imageHeight: 200
+    imageTitle: "Us"
+    # buttons:
+    #   - name: Posts
+    #     url: posts
+    #   - name: Tags
+    #     url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Welcome to our restaurant reviews"
+    Content: >
+      Luis & Zeshan's restuarant reviews! We both share our experiences on the restaurants that we visit. Food is our love language
+
+menu:
+  main:
+    - identifier: Reviews
+      name: Reviews
+      url: /posts
+      weight: 10
+    - identifier: About
+      name: About
+      url: /about
+      weight: 20
+    - identifier: Favorites
+      name: Favorites
+      url: /favorites
+      weight: 30
