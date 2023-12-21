@@ -60,7 +60,7 @@ params:
     imageUrl: /IMG_1762.jpeg
     imageWidth: 260
     imageHeight: 200
-    imageTitle: "Us"
+    imageTitle: "Authors"
     # buttons:
     #   - name: Posts
     #     url: posts
