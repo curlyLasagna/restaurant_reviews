@@ -14,8 +14,9 @@ Made with Hugo, using the [PaperMod](https://adityatelange.github.io/hugo-PaperM
 ### Installing development environment
 
 For my one and only collaborator
-1. `git clone --recurse-submodules git@github.com:curlyLasagna/restaurant_reviews.git`
-2. `cd restaurant_reviews`
+
+1. `cd restaurant_reviews`
+2. `git submodule update --init --recursive`
 
 ## Contributing
 

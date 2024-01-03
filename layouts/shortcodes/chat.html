@@ -1,0 +1,101 @@
+<div class="chat">
+  <div class="yours messages">
+    <div class="message last">
+      Hello, how's it going?
+    </div>
+  </div>
+  <div class="mine messages">
+    <div class="message">
+      Great thanks!
+    </div> 
+    <div class="message last">
+      How about you?
+     </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="box3 right">
+        right bubble using css
+    </div>
+    <img id="img-right" src={{ $.Page.Site.Params.authorInfo.author_a_img }} />
+</div>
+<div class="container">
+    <img id="img-left" src="/zeshan.jpg" />
+    <div class="box3 left">
+        left bubble using css
+    </div>
+</div>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container {
+        /*ADDED*/
+        display: flex;
+        justify-content: center;
+        margin: 60px 0;
+    }
+
+    img {
+        /*ADDED*/
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+
+    #img-right {
+        /*ADDED*/
+        margin-left: 20px;
+    }
+
+    #img-left {
+        /*ADDED*/
+        margin-right: 20px;
+    }
+
+    .box3 {
+        width: 300px;
+        border-radius: 15px;
+        background: #00bfb6;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        font-weight: 900;
+        font-family: arial;
+        position: relative;
+    }
+
+    /* right bubble */
+
+    .right:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 15px solid #00bfb6;
+        border-right: 15px solid transparent;
+        border-top: 15px solid #00bfb6;
+        border-bottom: 15px solid transparent;
+        right: -16px;
+        top: 0px;
+    }
+
+    /* left bubble */
+
+    .left:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 15px solid transparent;
+        border-right: 15px solid #00bfb6;
+        border-top: 15px solid #00bfb6;
+        border-bottom: 15px solid transparent;
+        left: -16px;
+        top: 0px;
+    }
+</style>
