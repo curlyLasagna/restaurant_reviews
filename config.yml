@@ -9,13 +9,15 @@ minify:
   disableXML: true
   minifyOutput: true
 
-authorInfo:
-  author_a_name: "Luis"
-  author_b_name: "Zeshan"
-  author_a_img: /luis.jpg
-  author_b_img: /zeshan.jpg
+
 
 params:
+  authorInfo:
+    author_a_name: "Luis"
+    author_b_name: "Zeshan"
+    author_a_img: /luis.jpg
+    author_b_img: /zeshan.jpg
+
   mainSections:
   - reviews
   env: production # to enable google analytics, opengraph, twitter-cards and schema.

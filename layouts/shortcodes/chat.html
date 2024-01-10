@@ -1,31 +1,17 @@
-<div class="chat">
-  <div class="yours messages">
-    <div class="message last">
-      Hello, how's it going?
-    </div>
-  </div>
-  <div class="mine messages">
-    <div class="message">
-      Great thanks!
-    </div> 
-    <div class="message last">
-      How about you?
-     </div>
-  </div>
-</div>
-
 <div class="container">
     <div class="box3 right">
-        right bubble using css
+        {{ .Get "msg_l"}}
     </div>
-    <img id="img-right" src={{ $.Page.Site.Params.authorInfo.author_a_img }} />
+    <img id="img-right" src={{ .Site.Params.authorInfo.author_a_img }} />
 </div>
 <div class="container">
-    <img id="img-left" src="/zeshan.jpg" />
+    <img id="img-left" src={{ .Site.Params.authorInfo.author_b_img }} />
     <div class="box3 left">
-        left bubble using css
+        {{ .Get "msg_z"}}
     </div>
 </div>
+
+
 
 <style>
     * {
