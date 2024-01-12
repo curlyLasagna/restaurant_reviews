@@ -18,3 +18,6 @@ Throughout the meal, we enjoyed a cup of classic coffee with unlimited refills. 
 Luis did not like the cantaloupe, but that was a personal problem. Zeshan enjoyed all the fresh fruit, including the cantaloupe. 
 
 We were too full for dessert and took some of the chicken waffles home to enjoy later.
+
+{{< chat msg_l="Yo" msg_z="yyes" >}}
+{{< chat msg_l="lorem ipsum" >}}

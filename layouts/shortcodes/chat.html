@@ -1,16 +1,20 @@
+{{ with .Get "msg_l" }}
 <div class="container">
     <div class="box3 right">
-        {{ .Get "msg_l"}}
+        {{ . }}
     </div>
-    <img id="img-right" src={{ .Site.Params.authorInfo.author_a_img }} />
+    <img id="img-right" src={{ $.Site.Params.authorInfo.author_a_img }} />
 </div>
+{{ end }}
+{{ with .Get "msg_z" }}
 <div class="container">
-    <img id="img-left" src={{ .Site.Params.authorInfo.author_b_img }} />
+
+    <img id="img-left" src={{ $.Site.Params.authorInfo.author_b_img }} />
     <div class="box3 left">
-        {{ .Get "msg_z"}}
+        {{ . }}
     </div>
 </div>
-
+{{end}}
 
 
 <style>
