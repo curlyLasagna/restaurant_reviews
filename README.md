@@ -1,5 +1,8 @@
 # Restuarant Reviews
 
+> [!NOTE]  
+> Archived. No longer a couple.
+
 A website reviewing the different restaurants visited as a couple.
 
 Made with Hugo, using the [PaperMod](https://adityatelange.github.io/hugo-PaperMod/) theme
